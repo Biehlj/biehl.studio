@@ -19,16 +19,17 @@ const Education = () => {
   return (
     <section className="light" id="education">
       <h2 style={{ textAlign: "center" }}> Education</h2>
-      <div className="container">
+      <div
+        className="container"
+        style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}
+      >
         {educationList.map((education) => (
           <div className="box" key={education.school}>
-            <div className="flex-content">
-              <a href={education.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{education.school}</h3>
-              </a>
-              <h3>{education.degree}</h3>
-              <p className="small">{education.description}</p>
-            </div>
+            <a href={education.url} target="_blank" rel="noopener noreferrer">
+              <h3 style={{ flexBasis: "40px" }}>{education.school}</h3>
+            </a>
+            <h3>{education.degree}</h3>
+            <p className="small">{education.description}</p>
           </div>
         ))}
       </div>
