@@ -2,7 +2,11 @@
 * CSS file to hold styles that apply across the application
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
 
 html,
 body {
@@ -46,11 +50,12 @@ section img.background {
 }
 
 h1 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: system-ui;
   font-size: 7rem;
   font-weight: 400;
   line-height: 0.8;
   margin: 0;
+  color: white;
 }
 
 h2 {
@@ -58,6 +63,7 @@ h2 {
   font-weight: 400;
   margin: 0;
   padding-top: 1rem;
+  color: lightgrey;
 }
 
 h3 {
@@ -78,7 +84,7 @@ p.large {
 }
 
 p.small {
-  font-size: 15px;
+  font-size: auto;
 }
 
 hr {
