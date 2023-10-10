@@ -14,7 +14,6 @@ html, body {
 }
 
 div#main {
-  width: 100vw;
   flex-direction: column;
   display: flex;
 }
@@ -87,6 +86,14 @@ hr {
   margin: 2.5rem;
 }
 
+ul {
+  text-align: left;
+  columns: 2;
+  margin: "2rem 3rem";
+  gap: "3rem";
+  font-size: 1.25rem;
+}
+
 li {
   line-height: 1.7;
 }
@@ -113,6 +120,7 @@ a:hover {
 
 .container .box {
   text-align: center;
+  background-color: #fff;
   border: 1px solid;
   border-radius: 10px;
   flex-direction: column;
@@ -124,6 +132,55 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+.image-top {
+  height: 100%;
+  max-width: 40%;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.main-container {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 24px 16px;
+  display: flex;
+}
+
+.inner {
+  grid-gap: 10px;
+  grid-template-columns: 45% 45%;
+  margin: 20px auto;
+  display: grid;
+}
+
+.box {
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  ul {
+    columns: 1;
+  }
+
+  .main-container, .inner {
+    box-sizing: border-box;
+    flex-flow: column wrap;
+    display: flex;
+  }
+
+  .image-top {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */
