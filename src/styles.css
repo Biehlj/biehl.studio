@@ -22,7 +22,6 @@ body {
 div#main {
   display: flex;
   flex-direction: column;
-  width: 100vw;
 }
 
 section {
@@ -92,6 +91,13 @@ p.small {
 hr {
   margin: 2.5rem;
 }
+ul{
+  text-align: left;
+  columns: 2;
+  font-size: 1.25rem;
+  margin: "2rem 3rem";
+  gap: "3rem";
+}
 
 li {
   line-height: 1.7;
@@ -125,9 +131,60 @@ a:hover {
   justify-content: flex-start;
   padding: 24px 16px;
   text-align: center;
+  background-color: white;
 }
 
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+.image-top {
+  height: 100%;
+  max-width: 40%;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 24px 16px;
+}
+.inner{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-gap: 10px;
+  margin: 20px auto;
+}
+.box {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid;
+  box-sizing: border-box;
+  font-size: 16px;
+  text-align: center;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  ul{
+    columns: 1;
+  }
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .inner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .image-top {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 }
