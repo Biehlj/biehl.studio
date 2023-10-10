@@ -17,12 +17,10 @@ const educationList = [
 
 const Education = () => {
   return (
-    <section className="light" id="education">
+    <section className="padding" id="education">
       <h2 style={{ textAlign: "center" }}> Education</h2>
-      <div
-        className="container"
-        style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}
-      >
+      <div className="main-container" style={{ alignContents: "center" }}>
+        {" "}
         {educationList.map((education) => (
           <div className="box" key={education.school}>
             <a href={education.url} target="_blank" rel="noopener noreferrer">
